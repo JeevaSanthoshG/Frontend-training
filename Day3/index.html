@@ -1,10 +1,127 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Employee Task Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container, .table-container {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-   
+
+<div class="form-container">
+    <h2>Assign Task</h2>
+    <form id="taskForm">
+        <label for="employeeName">Employee Name:</label>
+        <input type="text" id="employeeName" name="employeeName" required><br><br>
+        
+        <label for="taskTitle">Task Title:</label>
+        <input type="text" id="taskTitle" name="taskTitle" required><br><br>
+        
+        <label for="taskDescription">Task Description:</label>
+        <textarea id="taskDescription" name="taskDescription" required></textarea><br><br>
+        
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate" name="dueDate" required><br><br>
+        
+        <button type="button" onclick="assignTask()">Assign Task</button>
+    </form>
+</div>
+
+<div class="table-container">
+    <h2>Employee Tasks</h2>
+    <table id="taskTable">
+        <thead>
+            <tr>
+                <th rowspan="2">Employee Name</th>
+                <th colspan="2">Task Details</th>
+                <th rowspan="2">Due Date</th>
+            </tr>
+            <tr>
+                <th>Task Title</th>
+                <th>Task Description</th>
+            </tr>
+        </thead>
+        <tbody id="taskTableBody">
+            <!-- Sample data -->
+            <tr>
+                <td rowspan="2">John Doe</td>
+                <td>Design Logo</td>
+                <td>Create a logo for the new project</td>
+                <td>2023-01-15</td>
+            </tr>
+            <tr>
+                <td>Update Website</td>
+                <td>Update the homepage with new content</td>
+                <td>2023-01-20</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    
+    function assignTask() {
+        var employeeName = document.getElementById("employeeName").value;
+        var taskTitle = document.getElementById("taskTitle").value;
+        var taskDescription = document.getElementById("taskDescription").value;
+        var dueDate = document.getElementById("dueDate").value;
+
+        var table = document.getElementById("taskTableBody");
+
+        // Check if the employee already has a row, if so, merge cells
+        var employeeExists = false;
+        var lastRowIndex = -1;
+
+        for (var i = 0; i < table.rows.length; i++) {
+            var cell = table.rows[i].cells[0];
+            if (cell && cell.innerText === employeeName) {
+                employeeExists = true;
+                cell.rowSpan += 1;
+                lastRowIndex = i;
+            }
+        }
+
+        var newRow;
+        if (employeeExists) {
+            newRow = table.insertRow(lastRowIndex + 1); // Insert after the last row for this employee
+            var emptyCell = newRow.insertCell(0);
+            emptyCell.innerHTML = ""; // Empty cell for employee name
+        } else {
+            newRow = table.insertRow(); // Insert at the end
+            var employeeCell = newRow.insertCell(0);
+            employeeCell.innerText = employeeName;
+            employeeCell.rowSpan = 1;
+        }
+
+        newRow.insertCell(1).innerText = taskTitle;
+        newRow.insertCell(2).innerText = taskDescription;
+        newRow.insertCell(3).innerText = dueDate;
+
+        // Clear the form
+        document.getElementById("taskForm").reset();
+    }
+
+</script>
+
 </body>
 </html>
