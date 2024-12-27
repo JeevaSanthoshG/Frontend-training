@@ -62,7 +62,7 @@
             </tr>
         </thead>
         <tbody id="taskTableBody">
-            <!-- Sample data -->
+           
             <tr>
                 <td rowspan="2">John Doe</td>
                 <td>Design Logo</td>
@@ -88,7 +88,7 @@
 
         var table = document.getElementById("taskTableBody");
 
-        // Check if the employee already has a row, if so, merge cells
+        
         var employeeExists = false;
         var lastRowIndex = -1;
 
@@ -103,11 +103,11 @@
 
         var newRow;
         if (employeeExists) {
-            newRow = table.insertRow(lastRowIndex + 1); // Insert after the last row for this employee
+            newRow = table.insertRow(lastRowIndex + 1);
             var emptyCell = newRow.insertCell(0);
-            emptyCell.innerHTML = ""; // Empty cell for employee name
+            emptyCell.innerHTML = ""; 
         } else {
-            newRow = table.insertRow(); // Insert at the end
+            newRow = table.insertRow(); 
             var employeeCell = newRow.insertCell(0);
             employeeCell.innerText = employeeName;
             employeeCell.rowSpan = 1;
@@ -117,7 +117,7 @@
         newRow.insertCell(2).innerText = taskDescription;
         newRow.insertCell(3).innerText = dueDate;
 
-        // Clear the form
+   
         document.getElementById("taskForm").reset();
     }
 
