@@ -1,0 +1,370 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3D405B;
+    height: 90px;
+    padding: 0 20px 0 20px;
+    color: white;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    color: #ffffff;
+}
+
+.logo-p{
+    color: #ffffff;
+    margin: 0;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    margin-right: 120px;
+    padding: 0;
+    gap: 40px;
+}
+
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    color: #f2cc8f;
+}
+
+.member-btn{
+    height: 100%;
+    background: #3D405B;
+    color: #f2cc8f;
+    border: #f2cc8f 1px solid;
+    border-radius: 100px;
+
+    padding: 10px 20px;
+}
+
+.member-btn:hover{
+    background: #f2cc8f;
+    color: #ffffff;
+}
+
+/* Home */
+#home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-evenly;
+    background-image: url('assets/homebg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.home-svg-top{
+    position: absolute;
+    width: inherit;
+    top: 0;
+}
+.home-svg-bottom{
+    position: absolute;
+    width: inherit;
+    bottom: 0;
+}
+.home-text h1{
+    font-size: 42px;
+    margin: 15px;
+    color: #ffffff;
+}
+
+.classic-btn{
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0 0 0 16px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background-color: #f2cc8f;
+    border: #f2cc8f;
+}
+
+.classic-btn:hover{
+    background-color: #E07A5F;
+    border: #E07A5F;
+}
+
+.home-text a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    
+}
+/* About */
+
+#about{
+    height : 148.5vh;
+    background: #ffffff;
+    position: relative;
+}
+
+.about-head{
+    font-size: 2rem;
+}
+
+.about-subhead{
+    font-size: 28px;
+}
+
+.about-content{
+    font-size: 1.2rem;
+    color: #717275;
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 0 80px;
+    gap: 30px;
+}
+
+.about-svg-top{
+    position: absolute;
+    width: inherit;
+    
+}
+
+.about-svg-bottom{
+    position: absolute;
+    width: inherit;
+    rotate: 180deg;
+    bottom: 0;
+}
+
+.about-form-container{
+    height: 86vh;
+    width: inherit;
+    background-image: url('assets/aboutbg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1000;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.about-form-div{
+    background-color: red;
+    height: 250px;
+    padding: 30px  60px 50px 60px;
+    backdrop-filter: blur(5px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+}
+
+.about-form-div h2{
+    font-size: 2.2rem;
+}
+
+.about-form-div p{
+    font-size: 1.2rem;
+    color: #717275;
+    margin-bottom: 30px;
+}
+
+.about-input{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 10px 10px 30px;
+    border-radius: 100px;
+}
+
+.about-input input{
+    margin: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    color: #717275;
+}
+
+.about-input i{
+    font-size: 20px;
+    color: #717275;
+    margin-right: 10px;
+}
+
+
+/* Membership */
+
+#membership{
+    height: 100vh;
+    background: #ffffff;
+}
+
+.membership-head{
+    font-size: 2.2rem;
+}
+
+.membership-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+.membership-table table{
+    height: 428px;
+    width: 636px;
+    border-collapse: collapse;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.membership-table th{
+    background-color: #3D405B;
+    color: #ffffff;
+    border: none;
+}
+
+.membership-table td{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.membership-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 410px;
+    width: 490px;
+    border-radius: 20px;
+    padding: 0 35px 35px 35px;
+    background: #3D405B;
+    padding: 20px;
+    gap: 20px;
+}
+
+.membership-form input{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: black 2px solid;
+    height: 30px;
+    font-size: 16px;
+}
+
+.membership-form textarea{
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: black 2px solid;
+    font-size: 16px;
+}
+
+
+
+
+/* Events */
+
+#events{
+    height: 100vh;
+    background: #f4f1de;
+    padding: 50px 60px 100px 60px;
+}
+
+#events h1{
+    font-size: 3remx;
+}
+
+.events-date{
+    border-radius: 20px;
+    height: 120px;
+    width: 180px;
+    padding: 10px 20px;
+    background: #81B29A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-date span{
+    font-size: 3rem;
+}
+
+/* Contact Us */
+
+#contactus{
+    background: #ffffff;
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactus-direction{
+    width: 640px;
+    height: 250px;
+    background-image: url('assets/WorldMap.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cu-direction{
+    background: #3D405B;
+    padding: 20px;
+}
+
+/* Pages */
+
+#pages{
+    background: #ffffff;
+}
+
+/* Footer */
+
+footer{
+    background-color: #ffffff;
+}
+
+.footer-svg-bottom{
+    bott
+}
