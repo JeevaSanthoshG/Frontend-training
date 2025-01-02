@@ -4,10 +4,17 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
+    position: relative;
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+pre {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color: #717275;
 }
 
 /* Navbar */
@@ -128,13 +135,13 @@ nav {
     text-decoration: none;
     font-weight: 600;
     color: #ffffff;
-
+    margin: 0 0 0 25px;
 }
 
 /* About */
 
 #about {
-    height: 148.5vh;
+    height: 144.5vh;
     background: #ffffff;
     position: relative;
 }
@@ -145,6 +152,7 @@ nav {
 
 .about-subhead {
     font-size: 28px;
+    margin: 0;
 }
 
 .about-content {
@@ -159,6 +167,19 @@ nav {
     margin-bottom: 40px;
     padding: 0 80px;
     gap: 30px;
+}
+
+.about-container h4 {
+    margin: 2px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.about-container h5 {
+    margin: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #717275;
 }
 
 .about-svg-top {
@@ -264,6 +285,11 @@ nav {
     border: none;
 }
 
+.membership-table tr td:first-child {
+    padding-left: 15px;
+    text-align: left;
+}
+
 .membership-table td {
     text-align: center;
     font-weight: bolder;
@@ -282,10 +308,11 @@ nav {
     gap: 20px;
 }
 
-.membership-form h3{
+.membership-form h3 {
     margin: 0;
     padding: 10px;
 }
+
 .membership-form input {
     padding: 20px;
     border-radius: 100px;
@@ -332,8 +359,17 @@ nav {
     align-items: center;
 }
 
-.events-date span {
+.events-date h4 {
     font-size: 3rem;
+    color: black;
+    margin: 0;
+    font-weight: 500;
+}
+
+.events-date p {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 600;
 }
 
 /* Contact Us */
@@ -381,27 +417,30 @@ nav {
     font-weight: 600;
 }
 
-.direction-btn:hover{
+.direction-btn:hover {
     background-color: #f2cc8f;
 }
 
-#contacts form{
+#contacts form {
     width: 590px;
     border-radius: 20px;
 }
-#contacts form input{
+
+#contacts form input {
     margin-bottom: 20px;
     padding: 20px;
     width: 300px;
-    border-radius: 50px ;
+    border-radius: 50px;
     display: block;
     border: 1px solid #717275;
     font-size: 1rem
 }
-#contacts h1{
+
+#contacts h1 {
     font-size: 2.2rem;
 }
-#contacts form textarea{
+
+#contacts form textarea {
     width: 95%;
     height: 120px;
     border-radius: 10px;
@@ -411,19 +450,21 @@ nav {
     overflow-x: hidden;
     border: 1px solid #717275;
 }
-.contacts-button{
+
+.contacts-button {
     width: 100%;
     padding: 15px;
     border-radius: 50px;
     color: white;
     background: #f2cc8f;
-    border:2px solid #f2cc8f;
+    border: 2px solid #f2cc8f;
     font-size: 15px;
 }
-#contacts form button:hover{
+
+#contacts form button:hover {
     background-color: #E07A5F;
     color: white;
-    border: 2px solid  #E07A5F;
+    border: 2px solid #E07A5F;
 }
 
 /* Pages */
@@ -439,7 +480,7 @@ footer {
     background-color: #ffffff;
 }
 
-.foot-content{
+.foot-content {
     display: flex;
     padding: 100px;
     justify-content: space-between;
@@ -447,19 +488,69 @@ footer {
 
 .footer-svg-bottom {
     position: absolute;
-    bottom: -100px;
+    bottom: -90px;
     width: 100%;
 }
 
-.foot-icon{
+.foot-icon {
     background-color: #3D405B;
     color: #ffffff;
-    border-radius: 100px;
-    height: 35px;
+    border-radius: 100%;
+    padding: 5px;
     width: 35px;
+    height: 35px;
 }
 
-.foot-icon:hover{
+.foot-icon:hover {
     background-color: #81B29A;
 }
 
+/* Sidebar */
+#sidebar{
+    display: none;
+    overflow: auto;
+    height: 100vh;
+    width: 340px;
+    position: fixed;
+    background-color: #81B29A;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.sidebar {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 62px;
+}
+
+.sidebar label{
+    color: #717275;
+}
+.sidebar input{
+    padding: 10px;
+    border-radius: 20px;
+    border: #717275;
+    font-size: 16px;
+}
+
+.sidebar-container {
+    position: relative;
+    width: 100%;
+}
+
+.sidebar-svg-bottom {
+    position: absolute;
+    bottom: 0;
+    width: inherit;
+}
+
+.sidebar-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

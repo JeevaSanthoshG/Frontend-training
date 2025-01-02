@@ -20,7 +20,7 @@
                     <img src="assets/logo.png" alt="Logo" width="50px">
                     <div>
                         <p class="logo-p">Tiya</p>
-                        <p class="logo-p">Golf club</p>
+                        <p class="logo-p" style="font-size: 12px;">Golf club</p>
                     </div>
                 </div>
             </a>
@@ -30,8 +30,8 @@
                 <li><a href="#membership">Membership</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#contactus">Contact Us</a></li>
-                <li><a href="#pages">Pages</a></li>
-                <button class="member-btn">MEMBER LOGIN</button>
+                <li><a href="#pages">Pages<i class="fa-solid fa-telegram"></i></a></li>
+                <button class="member-btn" id="member-login">MEMBER LOGIN</button>
             </ul>
         </nav>
     </header>
@@ -71,7 +71,8 @@
         <div class="about-container">
             <div>
                 <h3 class="about-subhead">Tiya Club History</h3>
-                <p class="about-content">Since 1984, Tiya is ranked #8 in the top 10 golf courses in the world. Tiya is
+                <p class="about-content"><b>Since 1984,</b> Tiya is ranked #8 in the top 10 golf courses in the world.
+                    Tiya is
                     Bootstrap 5 HTML CSS template for golf clubs. Anyone can modify and use this layout for commercial
                     purposes.</p>
                 <p class="about-content">Tiya Golf Club is 100% free CSS template provided by TemplateMo website. Please
@@ -211,7 +212,8 @@
             <div class="events-content1"
                 style="gap:10px; display: flex; justify-content: space-between; padding: 20px;">
                 <div class="events-date">
-                    <span>24</span> <br> Feb 2048
+                    <h4>24</h4>
+                    <p>Feb 2048</p>
                 </div>
                 <div class="img" style="border-radius: 20px;">
                     <img src="assets/event1.jpg" width="391px" height="253px" style="border-radius: 20px;">
@@ -227,7 +229,7 @@
                                 <pre>Location:     National Center, NYC</pre>
                             </h3>
                             <h3>
-                                <pre>Ticket:       $250</pre>
+                                <pre>Ticket:          $250</pre>
                             </h3>
                         </div>
                         <button class="classic-btn" style="height: 40px;">Buy Ticket</button>
@@ -239,7 +241,8 @@
             <div class="events-content1"
                 style="display: flex; justify-content: space-between; background: white; padding: 30px; border-radius: 20px;">
                 <div class="events-date">
-                    <span>28</span> <br> Feb 2048
+                    <h4>28</h4>
+                    <p>Feb 2048</p>
                 </div>
                 <div class="img" style="border-radius: 20px;">
                     <img src="assets/event2.jpg" width="391px" height="253px" style="border-radius: 20px;">
@@ -255,7 +258,7 @@
                                 <pre>Location:     National Center, NYC</pre>
                             </h3>
                             <h3>
-                                <pre>Ticket:       $350</pre>
+                                <pre>Ticket:          $350</pre>
                             </h3>
                         </div>
                         <button class="classic-btn" style="height: 40px;">Buy Ticket</button>
@@ -272,7 +275,7 @@
             <form action="">
                 <div style="display: flex; gap: 15px;">
                     <input type="text" placeholder="Full Name">
-                     <input type="email" placeholder="Email address">
+                    <input type="email" placeholder="Email address">
                 </div>
                 <textarea name="" id="" placeholder="Message"></textarea>
                 <button class="contacts-button">Submit Form</button>
@@ -290,39 +293,69 @@
 
     </section>
 
-    <section id="pages">
-
+    <section id="sidebar">
+        <div class="sidebar">
+            <div class="sidebar-container">
+                <div class="sidebar-head">
+                    <h1>Member Login</h1>
+                    <a href="">Back</a>
+                </div>
+                <form action="">
+                    <label for="membershipno">Membership No.</label><br>
+                    <input type="text" id="membershipno" placeholder="11002560"><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" placeholder="Password">
+                    <br>
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" >Remember me</label><br>
+                    <input type="submit" id="class"><br>
+                    <a href="">Forgotten password?</a>
+                </form>
+                <p>Any Questions? <span>010-020-0340</span></p>
+                
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="sidebar-svg-botttom">
+                    <path fill="#3D405B" fill-opacity="1"
+                        d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+                    </path>
+                </svg>
     </section>
 
     <footer>
         <div class="footer">
             <div class="foot-content">
-            <div class="foot-logo">
-                <a href="" style="text-decoration: none;">
-                    <div class="logo">
-                    <img src="assets/logo.png" alt="Logo" width="50px">
-                    <div>
-                        <p class="logo-p" style="color: black;">Tiya</p>
-                        <p class="logo-p" style="color: black;">Golf club</p>
+                <div class="foot-logo">
+                    <a href="" style="text-decoration: none;">
+                        <div class="logo">
+                            <img src="assets/logo.png" alt="Logo" width="50px">
+                            <div>
+                                <p class="logo-p" style="color: black;">Tiya</p>
+                                <p class="logo-p" style="color: black; font-size: 12px;">Golf club</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div style="display: flex; gap: 200px;">
+                    <div class="foot-join">
+                        <h2 style="margin: 0;">Join Us</h2>
+                        <h3>
+                            <pre>Mon-Fri    6:00 AM - 6:00 PM</pre>
+                        </h3>
+                        <hr>
+                        <h3>
+                            <pre>Sat-Sun    6:30 AM - 8:30 PM</pre>
+                        </h3>
+                        <p style="color: #717275;">Copyright &copy; 2048 Tiya Golf Club</p>
+                    </div>
+
+                    <div class="foot-link">
+                        <a href="#" class="social-icon-link bi-instagram foot-icon"></a>
+                        <a href="#" class="social-icon-link bi-twitter foot-icon"></a>
+                        <a href="#" class="social-icon-link bi-whatsapp foot-icon"></a>
+                        <p>Design: <a href="#" style="text-decoration: none;">TemplateMo</a></p>
                     </div>
                 </div>
-                </a>
-            </div>
-
-            <div class="foot-join">
-                <h2>Join Us</h2>
-                <h3><pre>Mon-Fri    6:00 AM - 6:00 PM</pre></h3>
-                <hr>
-                <h3><pre>Sat-Sun    6:30 AM - 8:30 Pm</pre></h3>
-                <p>Copyright &copy; 2048 Tiya Golf Club</p>
-            </div>
-
-            <div class="foot-link">
-                <a href="#" class="social-icon-link bi-instagram foot-icon"></a>
-                <a href="#" class="social-icon-link bi-twitter foot-icon"></a>
-                <a href="#" class="social-icon-link bi-whatsapp foot-icon"></a>
-                <p>Design: <a href="#" style="text-decoration: none;">TemplateMo</a></p>
-            </div>
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="footer-svg-bottom">
@@ -331,8 +364,9 @@
             </path>
         </svg>
     </footer>
-
-    <script src="script.js"></script>
 </body>
+<script src="script.js">
+    
+</script>
 
 </html>
