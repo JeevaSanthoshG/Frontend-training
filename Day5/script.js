@@ -3,6 +3,6 @@ document.getElementById("member-login").addEventListener("click", function () {
 });
 
 function toggleSidebar() {
-  var sidebar = document.getElementsByClassName("sidebar");  
+  var sidebar = document.getElementById("sidebar");  
     sidebar.style.display = "block";
 }
