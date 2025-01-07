@@ -42,7 +42,7 @@ input4.addEventListener("input", () => {
   let n = input4.value;
   let sum = 0;
   for (let i = 1; i <= n; i++) {
-    sum += 1;
+    if(n % i == 0) sum += 1;
   }
   output4.innerText = (sum == 2) ? "Prime" : "Not Prime";
 });
@@ -76,12 +76,12 @@ let output7 = document.getElementById("output7");
 input7.addEventListener("input", () => {
   let sum = 0;
   let s = input7.value;
-  for (let i = 0; i < s.length(); i++) {
+  for (let i = 0; i < s.length; i++) {
     if (s.charAt(i) == 'a' || s.charAt(i) == 'e' || s.charAt(i) == 'i' || s.charAt(i) == 'o' || s.charAt(i) == 'u') {
       sum += 1;
-      output7.innerText = sum;
     }
   }
+  output7.innerText = sum;  
 });
 
 // Task-8
@@ -90,7 +90,7 @@ let output8 = document.getElementById("output8");
 
 input8.addEventListener("input", () => {
   let n = input8.value;
-  for(let i = 0;i < n; i++){
+  for(let i = 0;i <= n; i++){
     let para = document.createElement("p");
     let temp = "";
     for(let j = 0;j < i;j++){
@@ -106,7 +106,7 @@ let input9 = document.getElementById("input9");
 let output9 = document.getElementById("output9");
 
 input9.addEventListener("input", () => {
-  for (let i = 1; i < 11; i++) {
+  for (let i = 1; i <= input9.value; i++) {
     let para = document.createElement("p");
     if(i % 3 == 0){
       para.innerHTML = "Fizz";
