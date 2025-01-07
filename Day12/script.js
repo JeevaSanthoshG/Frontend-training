@@ -1,4 +1,4 @@
-// Task-1
+// Task-1 Even or odd
 let input1 = document.getElementById("input1");
 let output1 = document.getElementById("output1");
 
@@ -6,7 +6,7 @@ input1.addEventListener("input", () => {
   output1.innerText = (input1.value % 2 == 0) ? "Even" : "Odd";
 });
 
-// Task-2
+// Task-2 Print number from 1 to 10
 let input2 = document.getElementById("input2");
 let output2 = document.getElementById("output2");
 
@@ -18,8 +18,7 @@ function print1to10() {
   }
 }
 
-// Task-3
-
+// Task-3 Multiples of number upto 30
 let input3 = document.getElementById("input3");
 let output3 = document.getElementById("output3");
 
@@ -34,7 +33,7 @@ input3.addEventListener("input", () => {
   }
 });
 
-// Task-4
+// Task-4 Is prime
 let input4 = document.getElementById("input4");
 let output4 = document.getElementById("output4");
 
@@ -47,7 +46,7 @@ input4.addEventListener("input", () => {
   output4.innerText = (sum == 2) ? "Prime" : "Not Prime";
 });
 
-// Task-5
+// Task-5 Sum of numbers
 let input5 = document.getElementById("input5");
 let output5 = document.getElementById("output5");
 
@@ -60,7 +59,7 @@ input5.addEventListener("input", () => {
   output5.innerText = sum;
 });
 
-// Task-6
+// Task-6 Max element in array
 let input6 = document.getElementById("input6");
 let output6 = document.getElementById("output6");
 
@@ -70,7 +69,7 @@ input6.addEventListener("input", () => {
 });
 
 
-// Task-7
+// Task-7 Vowel count
 let input7 = document.getElementById("input7");
 let output7 = document.getElementById("output7");
 
@@ -85,7 +84,7 @@ input7.addEventListener("input", () => {
   output7.innerText = sum;  
 });
 
-// Task-8
+// Task-8 Star pattern
 let input8 = document.getElementById("input8");
 let output8 = document.getElementById("output8");
 
@@ -102,7 +101,7 @@ input8.addEventListener("input", () => {
   }
 });
 
-// Task-9
+// Task-9 FizzBuzz
 let input9 = document.getElementById("input9");
 let output9 = document.getElementById("output9");
 
@@ -122,7 +121,7 @@ input9.addEventListener("input", () => {
   }
 });
 
-// Task-10
+// Task-10 String reverse
 let input10 = document.getElementById("input10");
 let output10 = document.getElementById("output10");
 
