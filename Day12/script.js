@@ -64,10 +64,11 @@ input5.addEventListener("input", () => {
 let input6 = document.getElementById("input6");
 let output6 = document.getElementById("output6");
 
-input6.addEventListener("mouseover", () => {
-  let arr = [1, 2, 3, 4, 5];
+input6.addEventListener("input", () => {
+  let arr = input6.value.split(" ");
   output6.innerText = Math.max(...arr);
 });
+
 
 // Task-7
 let input7 = document.getElementById("input7");
