@@ -3,9 +3,25 @@ let input1_1 = document.getElementById("input1-1");
 let input1_2 = document.getElementById("input1-2");
 let output1 = document.getElementById("output1");
 
-input1_2.addEventListener("input", () => {
-  output1.innerText = "Sum : " + (Number(input1_1.value) + Number(input1_2.value)) + "\nDifference : " + (Number(input1_1.value) - Number(input1_2.value)) + "\nProduct : " + (Number(input1_1.value) * Number(input1_2.value)) + "\nQuotient : " + (Number(input1_1.value) / Number(input1_2.value));
+input1_1.addEventListener("input", () => {
+  arthmeticOperator();
 });
+
+input1_2.addEventListener("input", () => {
+  arthmeticOperator();
+});
+
+function arthmeticOperator(){
+    output1.innerText =
+      "Sum : " +
+      (Number(input1_1.value) + Number(input1_2.value)) +
+      "\nDifference : " +
+      (Number(input1_1.value) - Number(input1_2.value)) +
+      "\nProduct : " +
+      Number(input1_1.value) * Number(input1_2.value) +
+      "\nQuotient : " +
+      Number(input1_1.value) / Number(input1_2.value);
+}
 
 // Task-2 Is greater than 10 and is divide by 2
 let input2 = document.getElementById("input2");
