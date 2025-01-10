@@ -1,5 +1,8 @@
 // Task-1 Array sort in basis of age 
 
+console.log("Task-1");
+
+
 const input1 = [
     { name: "John", age: 28 },
     { name: "Anna", age: 22 },
@@ -16,6 +19,8 @@ arraysSort(input1);
 
 // Task-2 Odd or Even
 
+console.log("Task-2");
+
 const input2 = [1, 2, 3, 4, 5, 6];
 
 const oddOrEven = (input2) => {
@@ -29,6 +34,8 @@ const oddOrEven = (input2) => {
 console.log(oddOrEven(input2));
 
 // Task-3 Remove duplicate
+
+console.log("Task-3");
 
 const input3 = [
     { id: 1, name: "A" },
@@ -50,6 +57,9 @@ const removeDuplicate = (input3) => {
 console.log(removeDuplicate(input3));
 
 // Task-4 Most frequency
+
+console.log("Task-4");
+
 
 const input4 = [1, 2, 2, 3, 3, 3];
 
@@ -77,6 +87,8 @@ console.log(mostFrequency(input4));
 
 // Task-5 Return the same elements
 
+console.log("Task-5");
+
 const input5_1 = [1, 2, 3];
 const input5_2 = [2, 3, 4];
 
@@ -96,6 +108,8 @@ console.log(sameElement(input5_1, input5_2));
 
 // Task-6 Array to object
 
+console.log("Task-6");
+
 const input6 = [
   { id: 1, name: "A" },
   { id: 2, name: "B" },
@@ -113,6 +127,8 @@ console.log(arrayToObject(input6));
 
 // Task-7 Only once appears
 
+console.log("Task-7");
+
 const input7 = [1, 2, 2, 3, 4, 4, 5];
 
 const onceAppear = (input7) => {
@@ -128,6 +144,8 @@ const onceAppear = (input7) => {
 console.log(onceAppear(input7));
 
 // Task-8 Object to array
+
+console.log("Task-8");
 
 const input8 = { a: 1, b: 2 };
 
@@ -146,6 +164,8 @@ console.log(objectToArray(input8));
 
 // Task-9 Filter keys
 
+console.log("Task-9");
+
 const input9 = { a: 1, b: 2, c: 3 };
 
 const filterKeys = (input9) => {
@@ -162,6 +182,7 @@ console.log(filterKeys(input9));
 
 // Task-10 Merge array without duplicate
 
+console.log("Task-10");
 
 const input10_1 = [1, 2, 3, 5];
 const input10_2 = [4, 7];
