@@ -10,12 +10,10 @@ const input1 = [
 ];
 
 const arraysSort = (e) => {
-    e.sort((a, b) => a.age - b.age);
-    console.log(e);
+    return e.sort((a, b) => a.age - b.age);
 }
 
 arraysSort(input1);
-
 
 // Task-2 Odd or Even
 
@@ -25,9 +23,7 @@ const input2 = [1, 2, 3, 4, 5, 6];
 
 const oddOrEven = (input2) => {
     const res2 = { even: [], odd: [] };
-    input2.map((e) => {
-        (e % 2 == 0) ? res2.even.push(e) : res2.odd.push(e);
-    })
+    input2.map((e) => {e % 2 == 0 ? res2.even.push(e) : res2.odd.push(e)})
     return res2;
 }
 
@@ -49,7 +45,7 @@ const removeDuplicate = (input3) => {
         if (!occ.includes(e.id)) {
             occ.push(e.id);
             return true;
-        }
+        } 
         return false;
     })
 }
