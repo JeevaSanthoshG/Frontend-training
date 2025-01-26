@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Create */
+
+.create{
+    position: absolute;
+    display: none;
+}
+
+.create-form{
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.create-form h1{
+    text-align: center;
+}
+
+/* Update */
+
+.update{
+    position: absolute;
+    display: none;
+}
+
+.update-form{
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.update-form h1{
+    text-align: center;
+}
+
+/* Home */
+
+.home{
+    position: absolute;
+    display: none;
+}
+
+.home-content{
+    height: 95vh;
+    width: 95vw;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.group-button{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Active */
+
+.active{
+    display: flex;
+}

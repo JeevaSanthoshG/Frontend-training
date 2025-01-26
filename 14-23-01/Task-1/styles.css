@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Login */
+
+.login{
+    position: absolute;
+    display: none;
+}
+
+.login-form{
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Test */
+
+.test{
+    display: none;
+}
+
+.test-form{
+    border-radius: 25px;
+    margin: 80px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.test-form h1{
+    margin: 0 0 20px;
+}
+
+/* Result */
+
+.result{
+    display: none;
+}
+
+.result-content{
+    border-radius: 25px;
+    margin: 80px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Rank */
+
+.rank{
+    display: none;
+}
+
+.rank-content{
+    border-radius: 25px;
+    margin: 80px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Active */
+
+.active{
+    display: flex;
+}

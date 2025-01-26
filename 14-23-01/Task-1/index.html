@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section id="login" class="login">
+        <form id="login-form" class="login-form">
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                    placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Start</button>
+        </form>
+    </section>
+
+    <section id="test" class="test">
+        <form id="test-form" class="test-form">
+            <h1>Question</h1>
+        </form>
+    </section>
+
+    <section id="result" class="result">
+        <div id="result-content" class="result-content">
+            <h1>Result</h1>
+            <h3 id="your-score"></h3>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Correct Answer</th>
+                        <th scope="col">Your Answer</th>
+                    </tr>
+                </thead>
+                <tbody id="result-body" class="result-body">
+
+                </tbody>
+            </table>
+            <button class="btn btn-danger" id="result-back">Back</button>
+            <button class="btn btn-primary" id="result-rank">Rank</button>
+        </div>
+    </section>  
+
+    <section id="rank" class="rank">
+        <div class="rank-content" id="rank-content">
+            <h1>Rank</h1>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Score</th>
+                        <th scope="col">Rank</th>
+                    </tr>
+                </thead>
+                <tbody id="rank-body" class="rank-body">
+
+                </tbody>
+            </table>
+            <button class="btn btn-primary" id="rank-back">Back</button>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
