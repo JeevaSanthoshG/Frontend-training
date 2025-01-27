@@ -98,6 +98,7 @@ const edit = (idx) => {
   editIdx = idx;
   toggleHome();
   toggleUpdate();
+  renderUserTable
   document.getElementById("uname").value = data[idx].name;
   document.getElementById("uprice").value = data[idx].price;
 };
@@ -117,6 +118,7 @@ document.getElementById("update-form").addEventListener("submit", (e) => {
 const del = (idx) => {
   data.splice(idx, 1);
   renderTable();
+  renderUserTable();
 };
 
 
